@@ -21,10 +21,8 @@ public class ProjectileManager : Singleton<ProjectileManager>
 
     private void LateUpdate()
     {
-        if (ProjectilePS == null || SpatialGrid.Instance == null) return;
-
         int count = ProjectilePS.GetParticles(_particles);
-        
+
         bool changes = false;
 
         for (int i = 0; i < count; i++)
